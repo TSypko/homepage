@@ -136,6 +136,10 @@ showVueltaButton.addEventListener("click", toggleVueltaClass);
 // theme change
 let themeButton = document.querySelector(".js-main__button-theme");
 let themeMainBgChange = document.querySelector("body");
+let themeNavigationChange = document.querySelector(".navigation");
+let themeNavigationContainerChange = document.querySelector(
+  ".navigation__container"
+);
 let themeBgChange = document.querySelector(".main");
 let themeHeaderColorChange = document.querySelector(".main__header");
 let themeSecondHeaderColorChange = document.querySelectorAll(
@@ -170,6 +174,10 @@ let toggleTheme = () => {
     link.classList.toggle("table__link--themeLight");
   });
   themeMainBgChange.classList.toggle("body--themeLight");
+  themeNavigationChange.classList.toggle("navigation--themeLight");
+  themeNavigationContainerChange.classList.toggle(
+    "navigation__container--themeLight"
+  );
   themeBgChange.classList.toggle("main--themeLight");
   themeHeaderColorChange.classList.toggle("main__header--themeLight");
   themeInputColorChange.classList.toggle("main__input--themeLight");

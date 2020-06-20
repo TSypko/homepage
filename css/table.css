@@ -27,7 +27,13 @@
 
 .table__link--themeLight:hover {
   text-decoration: none;
-  color: #e67849;
+  color: #e9855a;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.table__link--themeLight:active {
+  text-decoration: none;
+  color: hsl(18, 74%, 72%);
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }

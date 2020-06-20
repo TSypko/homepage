@@ -24,7 +24,14 @@
     align-items: center;
   }
 }
+.navigation--themeLight {
+  background-color: #7c3c21;
+}
 
+.navigation__container--themeLight {
+  color: rgb(255, 7c3c21, 255);
+  background-color: #be5151;
+}
 .navigation__list {
   display: flex;
 }
@@ -63,13 +70,13 @@
 
 .navigation__link--themeLight:hover {
   text-decoration: none;
-  color: #e67849;
+  color: #e9855a;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
 .navigation__link--themeLight:active {
   text-decoration: none;
-  color: hsl(18, 58%, 40%);
+  color: hsl(18, 74%, 72%);
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
