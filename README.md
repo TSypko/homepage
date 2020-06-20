@@ -24,6 +24,8 @@ Section to test first JavaScript DOM interactions.
 3. Button that reveals hidden section of site with a red button:
 
 - Red button - check yourself :) 
+### Contact:
+Please feel free to contact me: [tsypko@gmail.com](tsypko@gmail.com)
 
 ## MY OTHER PROJECTS:
 
