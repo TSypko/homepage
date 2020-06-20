@@ -26,29 +26,29 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navigation">
-        <div class="navigation__container">
+<body class="js-body">
+    <nav class="navigation js-navigation">
+        <div class="navigation__container js-navigation__container">
             <div>
                 <p class="js-today"></p>
             </div>
             <div>
                 <ul class="navigation__list">
-                    <li class="navigation__listItem"><a class="navigation__link" href="#">Start</a></li>
-                    <li class="navigation__listItem"><a class="navigation__link" href="#hobby">Hobby</a>
+                    <li class="navigation__listItem"><a class="navigation__link js-navigation__link" href="#">Start</a></li>
+                    <li class="navigation__listItem"><a class="navigation__link js-navigation__link" href="#hobby">Hobby</a>
                     </li>
-                    <li class="navigation__listItem"><a class="navigation__link" href="#fun">Fun</a></li>
+                    <li class="navigation__listItem"><a class="navigation__link js-navigation__link" href="#fun">Fun</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="main">
-        <h1 class="main__header">Tomasz SYPKO Homepage</h1>
-        <h2 class="main__subHeader"><i> CZEŚĆ! Poznajmy się!</i></h2>
-        <form id="main__form">
-            <input type="text" class="main__input" placeholder="Wpisz proszę swoje imię" required>
+    <main class="main js-main">
+        <h1 class="main__header js-main__header">Tomasz SYPKO Homepage</h1>
+        <h2 class="main__subHeader js-main__subHeader"><i> CZEŚĆ! Poznajmy się!</i></h2>
+        <form id="main__form" class="js-main__form">
+            <input type="text" class="main__input js-main__input" placeholder="Wpisz proszę swoje imię" required>
             <br>
-            <button class="main__button main__button--main ">Przywitaj się</button>
+            <button class="main__button main__button--main js-main__button">Przywitaj się</button>
         </form>
         <section class="about">
             <p class="main__paragraph js-welcomeParagraph"></p>
@@ -61,32 +61,32 @@
                 ponad materiał przerabiany na dany moduł w aktualnym kursie. Ograniczyłem
                 ilość "nadprogramowych" sposobów stylizowania tworząc prostą stronkę a <strong>skupiając
                     bardziej na
-                    możliwościach <span class="highlight">Javascript </span> w którym dopiero raczkuje</strong>
+                    możliwościach <span class="highlight js-highlight">Javascript </span> w którym dopiero raczkuje</strong>
                 :). W momencie w którym to czytasz strona jest już trochę bardziej zaawansowana ale starałem się nadal
                 utrzymać ją "ryzach" prostoty. Nie ma to jednak większego znaczenia, każdy ma swój tok nauki a na końcu
-                i tak się spotkamy starając się zostać <span class="highlight"><strong>Front End Developerem
+                i tak się spotkamy starając się zostać <span class="highlight js-highlight"><strong>Front End Developerem
                     </strong></span>
             </p>
             <img class="about__image" src="images/background.jpg" alt="Moje zdjęcie" />
         </section>
         <section class="hobby" id="hobby">
-            <h2 class="main__subHeader">Moje hobby</h2>
+            <h2 class="main__subHeader js-main__subHeader">Moje hobby</h2>
             <p class="main__paragraph"> Moim największym hobby oprócz samej jazdy na rowerze szosowym jest
-                kolarstwo w wydaniu profesjonalnym, głównie na poziomie <span class="highlight">World Tour</span> oraz
-                <span class="highlight">Professional Continental Teams</span>. Aktywyne śledzę relacje z wyscigów
+                kolarstwo w wydaniu profesjonalnym, głównie na poziomie <span class="highlight js-highlight">World Tour</span> oraz
+                <span class="highlight js-highlight">Professional Continental Teams</span>. Aktywyne śledzę relacje z wyscigów
                 głównie
                 w TV ale również na żywo gdy jest taka okazja.</p>
             <p class="main__paragraph"> Poniżej prezentuje klasyfikacje generalne z ostatniej dekady z trzech
-                <span class="highlight"><strong>najważniejszych wyścigów świata</strong></span>, tzw <b>Wielkich
+                <span class="highlight js-highlight"><strong>najważniejszych wyścigów świata</strong></span>, tzw <b>Wielkich
                     Tourów</b>. Każdej tabeli towarzyszy kolorstyka nawiązująca bezpośrednio do danego wydarzenia.
                 🚴‍♀️🚴‍♂️</p>
             <div class="hobby__buttons">
-                <button class="hobby__button hobby__button--tdf ">Zobacz Tour de France</button>
-                <button class="hobby__button hobby__button--giro">Zobacz Giro di Italia</button>
-                <button class="hobby__button hobby__button--vuelta">Zobacz Vuelta a Espana</button>
+                <button class="hobby__button hobby__button--tdf js-hobby__button js-hobby__button--tdf ">Zobacz Tour de France</button>
+                <button class="hobby__button hobby__button--giro js-hobby__button js-hobby__button--giro">Zobacz Giro di Italia</button>
+                <button class="hobby__button hobby__button--vuelta js-hobby__button js-hobby__button--vuelta">Zobacz Vuelta a Espana</button>
             </div>
-            <section class="table">
-                <div class="table__france">
+            <section class="table js-table">
+                <div class="table__france js-table__france">
                     <h2>Tour De France</h2>
                     <div class="table__franceBookmark"> </div>
                     <table class="table__tdf">
@@ -142,7 +142,7 @@
                                 <td class="table__tdfCell">Romain Bardet</td>
                                 <td class="table__tdfCell">Nairo Quintana</td>
                                 <td class="table__tdfCell">Peter Sagan</td>
-                                <td class="table__tdfCell highlightedRider"><span>Rafał&nbsp;Majka</span></td>
+                                <td class="table__tdfCell highlight js-highlightedRider"><span>Rafał&nbsp;Majka</span></td>
                                 <td class="table__tdfCell">Adam Yates</td>
                             </tr>
                             <tr class="table__tdfRow">
@@ -160,7 +160,7 @@
                                 <td class="table__tdfCell">Jean-Christophe Péraud</td>
                                 <td class="table__tdfCell">Thibaut Pinot</td>
                                 <td class="table__tdfCell">Peter Sagan</td>
-                                <td class="table__tdfCell highlightedRider"><span>Rafał&nbsp;Majka</span></td>
+                                <td class="table__tdfCell highlight js-highlightedRider"><span>Rafał&nbsp;Majka</span></td>
                                 <td class="table__tdfCell">Thibaut Pinot</td>
                             </tr>
                             <tr class="table__tdfRow">
@@ -201,7 +201,7 @@
                             </tr>
                         </tbody>
                         <tfoot>
-                            <td class="table__foot" colspan="7">źródło: <a class="table__link"
+                            <td class="table__foot" colspan="7">źródło: <a class="table__link js-table__link"
                                     href="https://www.procyclingstats.com/"
                                     target="_blank">https://www.procyclingstats.com/</a></td>
 
@@ -209,7 +209,7 @@
 
                 </div>
                 <!-- GIRO -->
-                <div class="table__italy">
+                <div class="table__italy  js-table__italy">
                     <h2>Giro di Italia</h2>
                     <div class="table__italyBookmark"> </div>
                     <table class="table__giro">
@@ -324,7 +324,7 @@
                             </tr>
                         </tbody>
                         <tfoot>
-                            <td class="table__foot" colspan="7">źródło: <a class="table__link"
+                            <td class="table__foot" colspan="7">źródło: <a class="table__link js-table__link"
                                     href="https://www.procyclingstats.com/"
                                     target="_blank">https://www.procyclingstats.com/</a></td>
 
@@ -332,7 +332,7 @@
 
                 </div>
                 <!-- VUELTA -->
-                <div class="table__spain">
+                <div class="table__spain js-table__spain">
                     <h2>Vuelta a Espana</h2>
                     <div class="table__spainBookmark"> </div>
                     <table class="table__vuelta">
@@ -392,7 +392,7 @@
                                 <th class="table__vueltaCell table__vueltaCell--header" scope="row">2015</th>
                                 <td class="table__vueltaCell">Fabio Aru</td>
                                 <td class="table__vueltaCell">Joaquim Rodríguez</td>
-                                <td class="table__vueltaCell highlightedRider"><span>Rafał&nbsp;Majka</span></td>
+                                <td class="table__vueltaCell highlight js-highlightedRider"><span>Rafał&nbsp;Majka</span></td>
                                 <td class="table__vueltaCell">Alejandro Valverde</td>
                                 <td class="table__vueltaCell">Omar Fraile</td>
                                 <td class="table__vueltaCell">Joaquim Rodríguez</td>
@@ -446,7 +446,7 @@
                         <tfoot>
                             <td class="table__foot" colspan="7">
                                 <p>*) Od 2019 roku zrezygnowano z klasyfikacji kombinowanej na rzecz młodzieżowej</p>
-                                <p>źródło: <a class="table__link" href="https://www.procyclingstats.com/"
+                                <p>źródło: <a class="table__link js-table__link" href="https://www.procyclingstats.com/"
                                         target="_blank">https://www.procyclingstats.com/</a>
                             </td>
                             </p>
@@ -455,16 +455,16 @@
             </section>
         </section>
         <footer class="footer" id="fun">
-            <h2 class="main__subHeader"><em>A teraz pobawmy się trochę</em> ;) </h2>
+            <h2 class="main__subHeader js-main__subHeader"><em>A teraz pobawmy się trochę</em> ;) </h2>
             <p class="footer__gifImage js-footer__gifImage">'<img src="images/bb8.webp" alt="BB8"></p>
             <div class="footer__buttons">
-                <button class="main__button js-main__button-theme">Zmień motyw na jasny</button>
-                <button class="main__button js-main__button-trigger">THUMB UP!</button>
-                <button class="main__button js-main__button-show">Ostatni gasi światło :)</button>
+                <button class="main__button js-main__button js-main__button-theme">Zmień motyw na jasny</button>
+                <button class="main__button js-main__button js-main__button-trigger">THUMB UP!</button>
+                <button class="main__button js-main__button js-main__button-show">Ostatni gasi światło :)</button>
             </div>
-            <div class="footer__hiddenSection">
-                <h2 class="main__subHeader">NA PEWNO?</h2>
-                <button class="footer__hiddenButton">ZNISZCZ</button>
+            <div class="footer__hiddenSection js-footer__hiddenSection">
+                <h2 class="main__subHeader js-main__subHeader">NA PEWNO?</h2>
+                <button class="footer__hiddenButton js-footer__hiddenButton">ZNISZCZ</button>
             </div>
         </footer>
     </main>
