@@ -22,25 +22,29 @@ For now, only available language is Polish so I'm feel sorry if you are foreign 
 ### Content and interactive features:
 
 -  ##### Top navbar
+![enter image description here](https://raw.githubusercontent.com/TSypko/homepage/master/readme/topnav.png)
 
 On the left you will find text-indicator describing current day, month and year.
-![enter image description here](https://raw.githubusercontent.com/TSypko/homepage/master/readme/topnav.png)
+
   
 
 -  ##### Welcome section
 ![https://raw.githubusercontent.com/TSypko/homepage/master/readme/welcome.png](https://raw.githubusercontent.com/TSypko/homepage/master/readme/welcome.png)
+
 Section include input where you are wished to write your name and click *"Przywitaj się"* button. That will provide a welcome message with your name inside, cool huh? :)
 
   
 
 -  ##### Hobby section:
 ![https://raw.githubusercontent.com/TSypko/homepage/master/readme/tables.png](https://raw.githubusercontent.com/TSypko/homepage/master/readme/tables.png)
+
 One of the excercises from the course was to create a table:
 
 As a fan of roadcycling you will find here three interactive tables represents Top 10 standings for the three biggest roadcycling races, known as Grand Tours.
 
 -  ##### FUN section:
 ![https://raw.githubusercontent.com/TSypko/homepage/master/readme/fun.png](https://raw.githubusercontent.com/TSypko/homepage/master/readme/fun.png)
+
 Section to test first JavaScript DOM interactions.
 
 1. Changing a theme fron dark to light button.
