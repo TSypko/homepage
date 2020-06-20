@@ -84,19 +84,20 @@
 
   // welcome form
 
-  const addName = document.querySelector(".js-main__form");
-  const helloToName = document.querySelector(".js-welcomeParagraph");
-
-  addEventListener("submit", (e) => {
+  const helloForm = (e) => {
     e.preventDefault();
+    const addName = document.querySelector(".js-main__form");
+    const helloToName = document.querySelector(".js-welcomeParagraph");
     const addNameValue = addName.querySelector(".js-main__input").value;
     helloToName.innerHTML =
       'Cześć <span class="highlight js-user__name">' +
       addNameValue +
       '</span>, ja mam na imię <b><span class="highlight">Tomek</span></b> i miło mi Cię poznać';
-  });
+  };
 
-  // table section
+  addEventListener("submit", helloForm);
+
+  // tables section
 
   const tdfTableButton = document.querySelector(".js-hobby__button--tdf");
   const tdfTable = document.querySelector(".js-table__france");
@@ -130,24 +131,34 @@
   vueltaTableButton.addEventListener("click", toggleVueltaTable);
 
   // theme change
-  const themeButton = document.querySelector(".js-main__button-theme");
-  const body = document.querySelector(".js-body");
-  const navigation = document.querySelector(".js-navigation");
-  const navigationContainer = document.querySelector(
-    ".js-navigation__container"
-  );
-  const mainContainer = document.querySelector(".js-main");
-  const mainHeader = document.querySelector(".js-main__header");
-  const mainSubHeader = document.querySelectorAll(".js-main__subHeader");
-  const highlited = document.querySelectorAll(".js-highlight");
-  const mainButton = document.querySelectorAll(".js-main__button");
-  const mainInput = document.querySelector(".js-main__input");
-  const table = document.querySelector(".js-table");
-  const hobbyButton = document.querySelectorAll(".js-hobby__button");
-  const navigationLink = document.querySelectorAll(".js-navigation__link");
-  const tableLink = document.querySelectorAll(".js-table__link");
 
+  const mainContainer = document.querySelector(".js-main"); // Also needed to destroy section
+  const navigation = document.querySelector(".js-navigation"); // Also needed to destroy section
+
+  const themeButton = document.querySelector(".js-main__button-theme");
+
+  const themeButtonTextChange = () => {
+    if (themeButton.classList.contains("main__button--themeLight")) {
+      themeButton.innerText = "ZMIEŃ MOTYW NA CIEMNY";
+    } else {
+      themeButton.innerText = "ZMIEŃ MOTYW NA JASNY";
+    }
+  };
   const toggleTheme = () => {
+    const body = document.querySelector(".js-body");
+    const navigationContainer = document.querySelector(
+      ".js-navigation__container"
+    );
+    const mainHeader = document.querySelector(".js-main__header");
+    const mainSubHeader = document.querySelectorAll(".js-main__subHeader");
+    const highlited = document.querySelectorAll(".js-highlight");
+    const mainButton = document.querySelectorAll(".js-main__button");
+    const mainInput = document.querySelector(".js-main__input");
+    const table = document.querySelector(".js-table");
+    const hobbyButton = document.querySelectorAll(".js-hobby__button");
+    const navigationLink = document.querySelectorAll(".js-navigation__link");
+    const tableLink = document.querySelectorAll(".js-table__link");
+
     mainSubHeader.forEach((h2) => {
       h2.classList.toggle("main__subHeader--themeLight");
     });
@@ -174,49 +185,40 @@
     mainHeader.classList.toggle("main__header--themeLight");
     mainInput.classList.toggle("main__input--themeLight");
     table.classList.toggle("table--themeLight");
+    themeButtonTextChange();
   };
-  const buttonText = () => {
-    if (themeButton.classList.contains("main__button--themeLight")) {
-      themeButton.innerText = "ZMIEŃ MOTYW NA CIEMNY";
-    } else {
-      themeButton.innerText = "ZMIEŃ MOTYW NA JASNY";
-    }
-  };
-
   themeButton.addEventListener("click", toggleTheme);
-  themeButton.addEventListener("click", buttonText);
 
   // funny pic
-  const funnyPicButton = document.querySelector(".js-main__button-trigger");
-  const funnyPicOn = document.querySelector(".js-footer__gifImage");
 
-  const triggerClass = () => {
+  const funnyPicButton = document.querySelector(".js-main__button-trigger");
+  const showHiddenImage = () => {
+    const funnyPicOn = document.querySelector(".js-footer__gifImage");
     funnyPicOn.classList.toggle("footer__gifImage--on");
-  };
-  const funnyPicButtonText = () => {
-    if (funnyPicButton.classList.contains("footer__gifImage--on")) {
-      funnyPicButton.innerText = "THUMB UP!";
+    if (funnyPicOn.classList.contains("footer__gifImage--on")) {
+      funnyPicButton.innerText = "THUMB DOWN!";
     } else {
-      funnyPicButton.innerText = "THUMB DOWN";
+      funnyPicButton.innerText = "THUMB UP!";
     }
   };
-  funnyPicButton.addEventListener("click", triggerClass);
-  funnyPicButton.addEventListener("click", funnyPicButtonText);
+  funnyPicButton.addEventListener("click", showHiddenImage);
+  // hidden section
+
+  const hiddenSectionButton = document.querySelector(".js-main__button-show");
+  const toggleClass = () => {
+    const hiddenSection = document.querySelector(".js-footer__hiddenSection");
+    hiddenSection.classList.toggle("footer__hiddenSection--on");
+  };
+
+  hiddenSectionButton.addEventListener("click", toggleClass);
+
+  // destroy section
+
+  const destroyButton = document.querySelector(".js-footer__hiddenButton");
+
+  const destroySite = () => {
+    mainContainer.remove();
+    navigation.remove();
+  };
+  destroyButton.addEventListener("click", destroySite);
 }
-
-// hidden section
-const hiddenSectionButton = document.querySelector(".js-main__button-show");
-const hiddenSection = document.querySelector(".js-footer__hiddenSection");
-
-const toggleClass = () => {
-  hiddenSection.classList.toggle("footer__hiddenSection--on");
-};
-
-hiddenSectionButton.addEventListener("click", toggleClass);
-// destroy section
-const destroyButton = document.querySelector(".js-footer__hiddenButton");
-
-destroyButton.addEventListener("click", () => {
-  mainContainer.remove();
-  navigation.remove();
-});
