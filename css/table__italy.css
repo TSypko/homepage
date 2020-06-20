@@ -1,0 +1,82 @@
+/* GIRO DI ITALIA */
+
+.table__italy {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(252, 252, 153);
+  background-color: inherit;
+  border-radius: 10px;
+  overflow-x: scroll;
+}
+@media (min-width: 767px) {
+  .table__italy {
+    overflow-x: hidden;
+  }
+}
+.table__italyBookmark {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 20px;
+  background: rgb(0, 18, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(18, 255, 0, 1) 33%,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(255, 0, 0, 1) 66%
+  );
+}
+.table__giro {
+  border-collapse: collapse;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.table__giroCell--header {
+  background-color: #e85480;
+}
+.table__giroRow {
+  background-color: rgb(231, 154, 177);
+}
+
+.table__giroRow:nth-child(odd) {
+  background-color: rgb(240, 194, 208);
+}
+.table__giroRow:hover {
+  background-color: rgb(204, 101, 132);
+}
+.table__giroCell {
+  border: 1px solid rgb(247, 199, 215);
+  padding: 5px;
+  text-align: center;
+}
+.table__giroCell:hover {
+  transform: scale(1.3);
+}
+.table__giroCell--mountainHeader {
+  background-color: #2a55e1;
+}
+.table__giroCell--mountainHeader span {
+  background-color: white;
+  border: 1px solid rgba(255, 0, 0, 0.548);
+  border-radius: 3px;
+  padding: 5px;
+}
+.table__giroCell--sprinterHeader {
+  background-color: purple;
+}
+.table__giroCell--youngHeade {
+  background-color: white;
+}
+.table__giroCaption,
+.table__italy h2 {
+  color: rgb(255, 92, 201);
+  margin: 20px;
+  text-shadow: 0 0 5px rgb(240, 11, 202);
+}
+
+.table__italy--on {
+  display: block;
+}

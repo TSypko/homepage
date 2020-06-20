@@ -1,0 +1,61 @@
+.hobby__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hobby__button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.hobby__button--tdf {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #d8d53f;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 20px;
+  transition: 0.5s;
+}
+.hobby__button--tdf:hover {
+  background-color: #d8d53f;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.hobby__button--giro {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #f75fc9;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 20px;
+  transition: 0.5s;
+}
+.hobby__button--giro:hover {
+  background-color: #f75fc9;
+  border: 1px solid #fff;
+  color: #000;
+}
+.hobby__button--vuelta {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ff0303;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 20px;
+  transition: 0.5s;
+}
+.hobby__button--vuelta:hover {
+  background-color: #ff0303;
+  border: 1px solid #fff;
+}
+
+.hobby__button--theme2 {
+  background-color: rgba(82, 82, 82, 0.5);
+}

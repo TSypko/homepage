@@ -1,0 +1,85 @@
+/* TOUR DE FRANCE TABLE */
+
+.table__france {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(252, 252, 153);
+  background-color: inherit;
+  border-radius: 10px;
+  overflow-x: scroll;
+}
+@media (min-width: 767px) {
+  .table__france {
+    overflow-x: hidden;
+  }
+}
+.table__france--on {
+  display: block;
+}
+.table__franceBookmark {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 20px;
+  background: rgb(0, 18, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 18, 255, 1) 0%,
+    rgba(0, 18, 255, 1) 33%,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(255, 0, 0, 1) 66%
+  );
+}
+.table__tdf {
+  border-collapse: collapse;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+}
+.table__tdfCell--tdfHeader {
+  background-color: yellow;
+}
+
+.table__tdfRow:nth-child(odd) {
+  background-color: rgb(255, 255, 195);
+}
+.table__tdfRow:hover {
+  background-color: rgb(238, 238, 155);
+}
+.table__tdfCell {
+  border: 1px solid rgb(183, 185, 48);
+  padding: 5px;
+  text-align: center;
+}
+.table__tdfCell:hover {
+  transform: scale(1.3);
+}
+.table__tdfCell--mountainHeader {
+  background-image: url(https://cdn.shopify.com/s/files/1/0558/3725/products/Polka_Dot_Cotton_Fabric_White_Fuchsia_Large_2_1000x.jpg?v=1571438720);
+  background-size: cover;
+}
+.table__tdfCell--mountainHeader span {
+  background-color: white;
+  border: 1px solid rgba(255, 0, 0, 0.548);
+  border-radius: 3px;
+  padding: 5px;
+}
+.table__tdfCell--sprinterHeader {
+  background-color: rgb(3, 184, 3);
+}
+.table__tdfCell--youngHeader {
+  background-color: white;
+}
+
+.table__tdfRow {
+  background-color: rgb(253, 253, 214);
+}
+
+.table__tdfCaption,
+.table__france h2 {
+  color: yellow;
+  margin: 20px;
+  text-shadow: 0 0 5px rgb(255, 251, 0);
+}

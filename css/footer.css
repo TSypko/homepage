@@ -1,0 +1,29 @@
+.footer__hiddenSection {
+  display: none;
+}
+
+.footer__hiddenSection--on {
+  display: block;
+}
+.footer__hiddenButton {
+  background-color: crimson;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #ececec;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+}
+.footer__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__gifImage {
+  display: none;
+}
+.footer__gifImage--on
+{
+  display: block;
+  text-align: center;
+}

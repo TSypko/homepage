@@ -1,0 +1,55 @@
+.table {
+  border-radius: 10px;
+}
+.table__link {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+.table__link:hover {
+  text-decoration: none;
+  color: #3f8dbb;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.table__link:active {
+  text-decoration: none;
+  color: #46a4da;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.table__link--theme2 {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+.table__link--theme2:hover {
+  text-decoration: none;
+  color: #e67849;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.table--theme2 {
+  background-color: rgba(82, 82, 82, 0.5);
+}
+.table__foot {
+  padding-top: 20px;
+  border: none;
+  text-align: right;
+  color: #ccc;
+}
+.highlightedRider {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+.highlightedRider span {
+  background-color: white;
+  border: 1px solid rgba(255, 0, 0, 0.548);
+  border-radius: 3px;
+  padding: 2px;
+}

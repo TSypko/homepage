@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1f1f1f;
+  font-family: "Open Sans", sans-serif;
+  color: #ccc;
+  margin: 0;
+  font-size: 16px;
+}
+.body--theme2 {
+  background-color: #dfad84;
+}
+
+.highlight {
+  color: #348dbb;
+}
+.highlight--theme2 {
+  color: #d63447;
+}
