@@ -5,7 +5,7 @@
   padding: 50px;
 }
 
-.main--theme2 {
+.main--themeLight {
   background-color: #e8e4e1;
   color: #000;
 }
@@ -22,7 +22,7 @@
   color: #fff;
 }
 
-.main__input--theme2 {
+.main__input--themeLight {
   padding: 5px 10px;
   background-color: transparent;
   border: 1px solid #7c3c21;
@@ -51,7 +51,7 @@
   border: 1px solid #fff;
   
 }
-.main__button--theme2 {
+.main__button--themeLight {
   padding: 10px 20px;
   color: #000;
   background-color: transparent;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-.main__button--theme2:hover {
+.main__button--themeLight:hover {
   background-color: #7c3c21;
   border: 1px solid rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -71,13 +71,13 @@
   text-align: center;
 }
 
-.main__header--theme2 {
+.main__header--themeLight {
   color: #7c3c21;
 }
 .main__subHeader {
   color: #3f8dbb;
 }
-.main__subHeader--theme2 {
+.main__subHeader--themeLight {
   color: #d63447;
 }
 .main__paragraph {

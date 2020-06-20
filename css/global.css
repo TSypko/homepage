@@ -16,13 +16,13 @@ body {
   margin: 0;
   font-size: 16px;
 }
-.body--theme2 {
+.body--themeLight {
   background-color: #dfad84;
 }
 
 .highlight {
   color: #348dbb;
 }
-.highlight--theme2 {
+.highlight--themeLight {
   color: #d63447;
 }

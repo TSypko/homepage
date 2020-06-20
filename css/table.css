@@ -19,19 +19,19 @@
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
-.table__link--theme2 {
+.table__link--themeLight {
   text-decoration: none;
   color: inherit;
   padding-bottom: 5px;
 }
 
-.table__link--theme2:hover {
+.table__link--themeLight:hover {
   text-decoration: none;
   color: #e67849;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
-.table--theme2 {
+.table--themeLight {
   background-color: rgba(82, 82, 82, 0.5);
 }
 .table__foot {

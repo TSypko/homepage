@@ -55,19 +55,19 @@
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
-.navigation__link--theme2 {
+.navigation__link--themeLight {
   text-decoration: none;
   color: inherit;
   padding-bottom: 5px;
 }
 
-.navigation__link--theme2:hover {
+.navigation__link--themeLight:hover {
   text-decoration: none;
   color: #e67849;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
 }
-.navigation__link--theme2:active {
+.navigation__link--themeLight:active {
   text-decoration: none;
   color: hsl(18, 58%, 40%);
   border-bottom: 1px solid #ccc;

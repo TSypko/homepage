@@ -151,32 +151,32 @@ let themeTableLinkChange = document.querySelectorAll(".table__link");
 
 let toggleTheme = () => {
   themeSecondHeaderColorChange.forEach((second__class_header) => {
-    second__class_header.classList.toggle("main__subHeader--theme2");
+    second__class_header.classList.toggle("main__subHeader--themeLight");
   });
 
   themeHighlightColorChange.forEach((highlight) => {
-    highlight.classList.toggle("highlight--theme2");
+    highlight.classList.toggle("highlight--themeLight");
   });
   themeButtonColorChange.forEach((fun__section_button) => {
-    fun__section_button.classList.toggle("main__button--theme2");
+    fun__section_button.classList.toggle("main__button--themeLight");
   });
   themeHobbyButtonChange.forEach((hobby_button) => {
-    hobby_button.classList.toggle("hobby__button--theme2");
+    hobby_button.classList.toggle("hobby__button--themeLight");
   });
   themeNavLinkChange.forEach((link) => {
-    link.classList.toggle("navigation__link--theme2");
+    link.classList.toggle("navigation__link--themeLight");
   });
   themeTableLinkChange.forEach((link) => {
-    link.classList.toggle("table__link--theme2");
+    link.classList.toggle("table__link--themeLight");
   });
-  themeMainBgChange.classList.toggle("body--theme2");
-  themeBgChange.classList.toggle("main--theme2");
-  themeHeaderColorChange.classList.toggle("main__header--theme2");
-  themeInputColorChange.classList.toggle("main__input--theme2");
-  themeTableChange.classList.toggle("table--theme2");
+  themeMainBgChange.classList.toggle("body--themeLight");
+  themeBgChange.classList.toggle("main--themeLight");
+  themeHeaderColorChange.classList.toggle("main__header--themeLight");
+  themeInputColorChange.classList.toggle("main__input--themeLight");
+  themeTableChange.classList.toggle("table--themeLight");
 };
 let buttonText = () => {
-  if (themeButton.classList.contains("main__button--theme2")) {
+  if (themeButton.classList.contains("main__button--themeLight")) {
     themeButton.innerText = "ZMIEŃ MOTYW NA CIEMNY";
   } else {
     themeButton.innerText = "ZMIEŃ MOTYW NA JASNY";
