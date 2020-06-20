@@ -19,6 +19,13 @@
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 767px) {
+  .footer__buttons  {
+    display: flex;
+    flex-direction: column;
+  
+  }
+}
 .footer__gifImage {
   display: none;
 }

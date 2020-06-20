@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 767px) {
+  .hobby__buttons  {
+    display: flex;
+    flex-direction: column;
+  
+  }
+}
 .hobby__button {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
