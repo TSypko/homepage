@@ -78,7 +78,7 @@
         break;
     }
 
-    today.innerText = `Dzisiaj jest ${dayOfWeek}, ${dayOfMonth} ${month} ${year} roku`
+    today.innerText = `Dzisiaj jest ${dayOfWeek}, ${dayOfMonth} ${month} ${year} roku`;
   };
   dateIndicator();
 
@@ -98,86 +98,82 @@
 
   // table section
 
-  const showTdfTableButton = document.querySelector(".js-hobby__button--tdf");
-  const showTdfTable = document.querySelector(".js-table__france");
-  const showVueltaTableButton = document.querySelector(".js-hobby__button--vuelta");
-  const showVueltaTable = document.querySelector(".js-table__spain");
-  const showGiroTableButton = document.querySelector(".js-hobby__button--giro");
-  const showGiroTable = document.querySelector(".js-table__italy");
+  const tdfTableButton = document.querySelector(".js-hobby__button--tdf");
+  const tdfTable = document.querySelector(".js-table__france");
+  const vueltaTableButton = document.querySelector(".js-hobby__button--vuelta");
+  const vueltaTable = document.querySelector(".js-table__spain");
+  const giroTableButton = document.querySelector(".js-hobby__button--giro");
+  const giroTable = document.querySelector(".js-table__italy");
 
-  const toggleTdfClass = () => {
-    showTdfTable.classList.toggle("table__france--on");
-    showGiroTable.classList.remove("table__italy--on");
-    showVueltaTable.classList.remove("table__spain--on");
+  const toggleTdfTable = () => {
+    tdfTable.classList.toggle("table__france--on");
+    giroTable.classList.remove("table__italy--on");
+    vueltaTable.classList.remove("table__spain--on");
   };
 
-  showTdfTableButton.addEventListener("click", toggleTdfClass);
+  tdfTableButton.addEventListener("click", toggleTdfTable);
 
-  const toggleGiroClass = () => {
-    showGiroTable.classList.toggle("table__italy--on");
-    showTdfTable.classList.remove("table__france--on");
-    showVueltaTable.classList.remove("table__spain--on");
+  const toggleGiroTable = () => {
+    giroTable.classList.toggle("table__italy--on");
+    tdfTable.classList.remove("table__france--on");
+    vueltaTable.classList.remove("table__spain--on");
   };
 
-  showGiroTableButton.addEventListener("click", toggleGiroClass);
+  giroTableButton.addEventListener("click", toggleGiroTable);
 
-  const toggleVueltaClass = () => {
-    showVueltaTable.classList.toggle("table__spain--on");
-    showGiroTable.classList.remove("table__italy--on");
-    showTdfTable.classList.remove("table__france--on");
+  const toggleVueltaTable = () => {
+    vueltaTable.classList.toggle("table__spain--on");
+    giroTable.classList.remove("table__italy--on");
+    tdfTable.classList.remove("table__france--on");
   };
 
-  showVueltaTableButton.addEventListener("click", toggleVueltaClass);
+  vueltaTableButton.addEventListener("click", toggleVueltaTable);
 
   // theme change
   const themeButton = document.querySelector(".js-main__button-theme");
-  const themeMainBgChange = document.querySelector(".js-body");
-  const themeNavigationChange = document.querySelector(".js-navigation");
-  const themeNavigationContainerChange = document.querySelector(
+  const body = document.querySelector(".js-body");
+  const navigation = document.querySelector(".js-navigation");
+  const navigationContainer = document.querySelector(
     ".js-navigation__container"
   );
-  const themeBgChange = document.querySelector(".js-main");
-  const themeHeaderColorChange = document.querySelector(".js-main__header");
-  const themeSecondHeaderColorChange = document.querySelectorAll(
-    ".js-main__subHeader"
-  );
-  const themeHighlightColorChange = document.querySelectorAll(".js-highlight");
-  const themeButtonColorChange = document.querySelectorAll(".js-main__button");
-  const themeInputColorChange = document.querySelector(".js-main__input");
-  const themeTableChange = document.querySelector(".js-table");
-  const themeHobbyButtonChange = document.querySelectorAll(".js-hobby__button");
-  const themeNavLinkChange = document.querySelectorAll(".js-navigation__link");
-  const themeTableLinkChange = document.querySelectorAll(".js-table__link");
+  const mainContainer = document.querySelector(".js-main");
+  const mainHeader = document.querySelector(".js-main__header");
+  const mainSubHeader = document.querySelectorAll(".js-main__subHeader");
+  const highlited = document.querySelectorAll(".js-highlight");
+  const mainButton = document.querySelectorAll(".js-main__button");
+  const mainInput = document.querySelector(".js-main__input");
+  const table = document.querySelector(".js-table");
+  const hobbyButton = document.querySelectorAll(".js-hobby__button");
+  const navigationLink = document.querySelectorAll(".js-navigation__link");
+  const tableLink = document.querySelectorAll(".js-table__link");
 
   const toggleTheme = () => {
-    themeSecondHeaderColorChange.forEach((second__class_header) => {
-      second__class_header.classList.toggle("main__subHeader--themeLight");
+    mainSubHeader.forEach((h2) => {
+      h2.classList.toggle("main__subHeader--themeLight");
     });
 
-    themeHighlightColorChange.forEach((highlight) => {
+    highlited.forEach((highlight) => {
       highlight.classList.toggle("highlight--themeLight");
     });
-    themeButtonColorChange.forEach((fun__section_button) => {
+    mainButton.forEach((fun__section_button) => {
       fun__section_button.classList.toggle("main__button--themeLight");
     });
-    themeHobbyButtonChange.forEach((hobby_button) => {
+    hobbyButton.forEach((hobby_button) => {
       hobby_button.classList.toggle("hobby__button--themeLight");
     });
-    themeNavLinkChange.forEach((link) => {
+    navigationLink.forEach((link) => {
       link.classList.toggle("navigation__link--themeLight");
     });
-    themeTableLinkChange.forEach((link) => {
+    tableLink.forEach((link) => {
       link.classList.toggle("table__link--themeLight");
     });
-    themeMainBgChange.classList.toggle("body--themeLight");
-    themeNavigationChange.classList.toggle("navigation--themeLight");
-    themeNavigationContainerChange.classList.toggle(
-      "navigation__container--themeLight"
-    );
-    themeBgChange.classList.toggle("main--themeLight");
-    themeHeaderColorChange.classList.toggle("main__header--themeLight");
-    themeInputColorChange.classList.toggle("main__input--themeLight");
-    themeTableChange.classList.toggle("table--themeLight");
+    body.classList.toggle("body--themeLight");
+    navigation.classList.toggle("navigation--themeLight");
+    navigationContainer.classList.toggle("navigation__container--themeLight");
+    mainContainer.classList.toggle("main--themeLight");
+    mainHeader.classList.toggle("main__header--themeLight");
+    mainInput.classList.toggle("main__input--themeLight");
+    table.classList.toggle("table--themeLight");
   };
   const buttonText = () => {
     if (themeButton.classList.contains("main__button--themeLight")) {
@@ -189,28 +185,6 @@
 
   themeButton.addEventListener("click", toggleTheme);
   themeButton.addEventListener("click", buttonText);
-
-  // destroy section
-  const offButton = document.querySelector(".js-footer__hiddenButton");
-  const mainContainer = document.querySelector(".js-main");
-  const navigation = document.querySelector(".js-navigation");
-  const afterDestroy = document.querySelector(".js-body");
-
-  offButton.addEventListener("click", () => {
-    mainContainer.remove();
-    navigation.remove();
-    afterDestroy.setAttribute("style", "background-color: black;");
-  });
-
-  // hidden section
-  const showButton = document.querySelector(".js-main__button-show");
-  const show = document.querySelector(".js-footer__hiddenSection");
-
-  const toggleClass = () => {
-    show.classList.toggle("footer__hiddenSection--on");
-  };
-
-  showButton.addEventListener("click", toggleClass);
 
   // funny pic
   const funnyPicButton = document.querySelector(".js-main__button-trigger");
@@ -229,3 +203,20 @@
   funnyPicButton.addEventListener("click", triggerClass);
   funnyPicButton.addEventListener("click", funnyPicButtonText);
 }
+
+// hidden section
+const hiddenSectionButton = document.querySelector(".js-main__button-show");
+const hiddenSection = document.querySelector(".js-footer__hiddenSection");
+
+const toggleClass = () => {
+  hiddenSection.classList.toggle("footer__hiddenSection--on");
+};
+
+hiddenSectionButton.addEventListener("click", toggleClass);
+// destroy section
+const destroyButton = document.querySelector(".js-footer__hiddenButton");
+
+destroyButton.addEventListener("click", () => {
+  mainContainer.remove();
+  navigation.remove();
+});
